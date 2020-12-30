@@ -35,6 +35,7 @@ class Operations extends Component{
                     vendor:"",
                     category:""
                 })
+                this.props.getTransactionsFromServer()
           })
           .catch(function (error) {
             console.log(error);

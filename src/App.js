@@ -67,7 +67,7 @@ class App extends Component {
             <Router>
                 {this.navBar()}
                 <div id="Links">
-                    <Route exact path='/operations' render={() => <Operations makeTransaction ={this.makeTransaction}/>} />
+                    <Route exact path='/operations' render={() => <Operations makeTransaction ={this.makeTransaction} getTransactionsFromServer={this.getTransactionsFromServer}/>} />
                     <Route exact path='/transactions'  render ={() => <Transactions transactions ={this.state.transactions} deleteTransaction ={this.deleteTransaction}/>}></Route>
                     <Route exact path='/categories'  render ={() => <Categories transactions ={this.state.transactions}/>}></Route>
                     <Route exact path='/' render={() => this.Home()} ></Route>
