@@ -2,7 +2,6 @@
 
 ### a Simplified Bank App.
 
-...add description
 
 ---
 
